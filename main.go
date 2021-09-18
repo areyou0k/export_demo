@@ -13,6 +13,7 @@ import (
 
 var (
 	Version       = "ESXI监控"
+	
 	listenAddress = flag.String("web.listen-address", ":9601", "Address to listen on for web interface and telemetry.")
 	metricPath    = flag.String("web.telemetry-path", "/metrics", "Path under which to expose metrics.")
 	landingPage   = []byte("<html><head><title>SYS Exporter " + Version +
